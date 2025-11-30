@@ -29,7 +29,7 @@ Very roughly, the project looks like this:
   - Entrypoints for training and evaluating different RL policies.
 
 ---
-## 2. Dependencies & Setup (short)
+## 2. Dependencies & Setup
 
 1. **Python**: 3.12.
 2. **SUMO** (and `netgenerate`, `netconvert`, `sumolib` on your `PATH`).
