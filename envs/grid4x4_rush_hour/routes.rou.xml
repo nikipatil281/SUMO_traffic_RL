@@ -1,0 +1,58 @@
+<routes>
+  <vType id="car" accel="2.0" decel="4.5" sigma="0.5"
+         length="5" minGap="2.5" maxSpeed="16.67" />
+
+  <!-- Phase 1: 0-600, heavy West->East, light other directions -->
+  <flow id="w2e_morning" type="car"
+        begin="0" end="600"
+        probability="0.08"
+        from="A0B0" to="C0D0"/>
+  <flow id="e2w_morning" type="car"
+        begin="0" end="600"
+        probability="0.02"
+        from="C0D0" to="A0B0"/>
+  <flow id="s2n_morning" type="car"
+        begin="0" end="600"
+        probability="0.03"
+        from="A0A1" to="A2A3"/>
+  <flow id="n2s_morning" type="car"
+        begin="0" end="600"
+        probability="0.03"
+        from="A2A3" to="A0A1"/>
+
+  <!-- Phase 2: 600-1200, heavy North<->South -->
+  <flow id="w2e_midday" type="car"
+        begin="600" end="1200"
+        probability="0.03"
+        from="A0B0" to="C0D0"/>
+  <flow id="e2w_midday" type="car"
+        begin="600" end="1200"
+        probability="0.03"
+        from="C0D0" to="A0B0"/>
+  <flow id="s2n_midday" type="car"
+        begin="600" end="1200"
+        probability="0.08"
+        from="A0A1" to="A2A3"/>
+  <flow id="n2s_midday" type="car"
+        begin="600" end="1200"
+        probability="0.08"
+        from="A2A3" to="A0A1"/>
+
+  <!-- Phase 3: 1200-1800, balanced moderate -->
+  <flow id="w2e_evening" type="car"
+        begin="1200" end="1800"
+        probability="0.04"
+        from="A0B0" to="C0D0"/>
+  <flow id="e2w_evening" type="car"
+        begin="1200" end="1800"
+        probability="0.04"
+        from="C0D0" to="A0B0"/>
+  <flow id="s2n_evening" type="car"
+        begin="1200" end="1800"
+        probability="0.04"
+        from="A0A1" to="A2A3"/>
+  <flow id="n2s_evening" type="car"
+        begin="1200" end="1800"
+        probability="0.04"
+        from="A2A3" to="A0A1"/>
+</routes>

@@ -1,0 +1,14 @@
+    <configuration>
+      <input>
+        <net-file value="net.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+      </input>
+      <time>
+        <step-length value="1.0"/>
+      </time>
+      <report>
+        <tripinfo-output>tripinfo_static.xml</tripinfo-output>
+      </report>
+
+    </configuration>
+    

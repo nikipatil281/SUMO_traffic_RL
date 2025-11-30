@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv_mac/
+.venv/
+venv/
+env/
+
+# SUMO outputs (optional)
+mac_runs/
+results/
+plots/
+
+# Model weights (optional)
+models/*.pt
+
+# macOS junk
+.DS_Store
